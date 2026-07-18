@@ -80,7 +80,7 @@
 			"info" : "info"
 		}
 	},
-	"Urlscan_io_Search_0_1_1" : {
+	"Urlscan_io_Search_0_2_0" : {
 		"dataType" : ["url", "ip", "domain", "hash", "fqdn"],
 		"levelMapping" : {
 			"malicious" : "info",
