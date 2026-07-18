@@ -1,0 +1,43 @@
+{
+	"email_filter": {
+		"domains" : "",
+		"subject" : ""
+	},
+	"skip_ioc_analysis": {
+		"emails": "",
+		"domains": ""
+	},
+	"imap": {
+		"host" : "imap.gmail.com",
+		"port" : "993",
+		"user" : "",
+		"password" : "",
+		"folder" : "inbox"
+	},
+	"iris": {
+		"url": "http://dfir-iris",
+		"apikey": "",
+		"verify_cert": true
+	},
+	"dim": {
+		"cortex_analyzer_module_name": "iris_cortexanalyzer_module",
+		"cortex_mailer_responder_module_name": "iris_cortex_mailer_responder_module"
+	},
+	"case" : {
+		"customer_id": "customer_id",
+		"reviewer_id": "reviewer_id",
+		"owner_id": "owner_id",
+		"severity": "Informational",
+		"send_start_notification": true,
+		"start_notification_subject": "case_id ThePhish Notification",
+		"start_notification_message": "The [inf_email] email is being analyzed.\n\nResults will be sent soon.",
+		"send_malicious_result_notification": true,
+		"send_safe_result_notification": true,
+		"send_result_subject": "case_id ThePhish Result",
+		"verdict_messages": {
+			"malicious": "The [inf_email] is malicious.",
+			"suspicious": "The [inf_email] is suspicious.",
+			"safe": "The [inf_email] is safe."
+		}
+	}
+}

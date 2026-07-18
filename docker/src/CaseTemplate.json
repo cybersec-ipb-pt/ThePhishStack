@@ -1,0 +1,56 @@
+{
+  "name": "Template ThePhish",
+  "display_name": "ThePhish",
+  "description": "Template ThePhish",
+  "author": "CSIRT",
+  "title_prefix": "[EMAIL]",
+  "summary": "An email was received, allegedly from a reputable company or individual, with the intent of collecting personal information, such as account login credentials and credit card numbers.",
+  "tags": [
+    "Phishing",
+    "ThePhish"
+  ],
+  "classification": "phishing",
+  "tasks": [
+    {
+      "title": "[default] ThePhish analysis",
+      "description": "",
+      "tags": []
+    },
+    {
+      "title": "[default] ThePhish result",
+      "description": "",
+      "tags": []
+    },
+    {
+      "title": "[default] ThePhish notification",
+      "description": "",
+      "tags": []
+    }
+  ],
+  "note_directories": [
+    {
+      "title": "[default] ThePhish analysis",
+      "notes": [
+        {
+            "title": "Analysis"
+        }
+      ]
+    },
+    {
+      "title": "[default] ThePhish result",
+      "notes": [
+        {
+            "title": "Result"
+        }
+      ]
+    },
+    {
+      "title": "[default] ThePhish notification",
+      "notes": [
+        {
+            "title": "Notification"
+        }
+      ]
+    }
+  ]
+}

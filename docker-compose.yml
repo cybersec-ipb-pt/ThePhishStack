@@ -1,0 +1,25 @@
+networks:
+  thephish_backend:
+    ipam:
+      config:
+        - subnet: 172.72.1.0/30
+
+services:
+  thephish:
+    build: ./docker/
+    image: thephishstack:latest
+    container_name: thephish
+    restart: unless-stopped
+    environment:
+      - DFIR_IRIS_URL=https://example.com/
+      - CORTEX_URL=https://example.com/
+      - ROOT_PATH=/thephish
+      - TZ=UTC
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./analyzers_level_conf.json:/opt/thephish/analyzers_level_conf.json:ro
+      - ./configuration.json:/opt/thephish/configuration.json:ro
+      - ./whitelist.json:/opt/thephish/whitelist.json:ro
+    networks:
+      - thephish_backend
